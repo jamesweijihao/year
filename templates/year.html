@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+    <h1>天干地支转换</h1>
+    <form action="{{url_for('convert')}}">
+        <label for="year">请输入年:</label>
+        <input type="text" name="year">
+        <input type="submit" value="转换">
+    </form>
+</div>
+
+{% endblock %}
